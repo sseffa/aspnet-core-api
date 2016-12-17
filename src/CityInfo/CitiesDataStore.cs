@@ -21,7 +21,22 @@ namespace CityInfo
 
                     Id = 1,
                     Name = "New York City",
-                    Desription = "Lorem ipsum sit amet"
+                    Desription = "Lorem ipsum sit amet",
+                    PointsOfInterest = new List<PointOfInterestDto>()
+                    {
+                        new PointOfInterestDto()
+                        {
+                                Id = 1,
+                                Name = "Central Park",
+                                Desription = "Lorem ipsum sit amet",
+                        },
+                        new PointOfInterestDto()
+                        {
+                                Id = 1,
+                                Name = "Empire State Building",
+                                Desription = "Lorem ipsum sit amet",
+                        }
+                    }
                 },
                  new CityDto()
                 {
