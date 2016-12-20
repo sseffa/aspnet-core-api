@@ -40,6 +40,8 @@ namespace CityInfo
         {
             loggerFactory.AddConsole();
 
+            loggerFactory.AddDebug();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
