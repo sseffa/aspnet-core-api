@@ -12,6 +12,8 @@ using Newtonsoft.Json.Serialization;
 using NLog.Extensions.Logging;
 using CityInfo.Services;
 using Microsoft.Extensions.Configuration;
+using CityInfo.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CityInfo
 {
@@ -55,6 +57,9 @@ namespace CityInfo
 #else
             services.AddTransient<IMailService, CloudMailService>();
 #endif
+
+            var connectionString = "server=.; database=CityInfoDB; trusted_connection=true";
+            services.AddDbContext<CityInfoContext>(o => o.UseSqlServer(connectionString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
