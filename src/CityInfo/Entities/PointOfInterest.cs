@@ -16,9 +16,10 @@ namespace CityInfo.Entities
         [Required]
         [MaxLength(50)]
         public string Name { get; set; }
-
+        
         [ForeignKey("CityId")]
-        public City city { get; set; }
-        public int cityId { get; set; }
+        public City City { get; set; }
+
+        public int CityId { get; set; }
     }
 }

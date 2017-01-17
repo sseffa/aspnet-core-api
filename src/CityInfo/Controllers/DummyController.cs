@@ -15,5 +15,13 @@ namespace CityInfo.Controllers
         {
             _ctx = ctx;
         }
+
+        [HttpGet]
+        [Route("api/testdatabase")]
+        public IActionResult TestDatabase()
+        {
+
+            return Ok();
+        }
     }
 }
