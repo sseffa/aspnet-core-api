@@ -16,7 +16,8 @@
     "Microsoft.Extensions.Logging.Debug": "1.0.0",
     "NLog.Extensions.Logging": "1.0.0-rtm-alpha5",
     "Microsoft.EntityFrameworkCore.Tools": "1.1.0-preview4-final",
-    "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0"
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
+    "AutoMapper": "5.2.0"
   },
 
   "tools": {
