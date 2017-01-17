@@ -8,9 +8,10 @@ using CityInfo.Entities;
 namespace CityInfo.Migrations
 {
     [DbContext(typeof(CityInfoContext))]
-    partial class CityInfoContextModelSnapshot : ModelSnapshot
+    [Migration("20170117092357_CityInfoDBAddPOIDescription")]
+    partial class CityInfoDBAddPOIDescription
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.0-rtm-22752")
